@@ -8,8 +8,7 @@ import org.openqa.selenium.WebDriver;
 public abstract class Page {
 
     WebDriver driver;
-    //todo hernoemen naar 8080
-    String path = "http://localhost:8081/Controller";
+    String path = "http://localhost:8080/Controller";
 
     public Page(WebDriver driver) {
         this.driver = driver;
