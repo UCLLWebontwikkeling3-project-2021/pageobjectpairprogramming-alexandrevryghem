@@ -38,7 +38,7 @@ public class LoginTest {
         homePage.setPassword("t");
         homePage.submitLogIn();
 
-        assertEquals(homePage.getTitle(), "Home");
+        assertEquals("Home", homePage.getTitle());
         assertTrue(homePage.hasWelcomeMessage("Welcome Anakin!"));
     }
 
@@ -49,7 +49,7 @@ public class LoginTest {
         homePage.setPassword("t");
         homePage.submitLogIn();
 
-        assertEquals(homePage.getTitle(), "Home");
+        assertEquals("Home", homePage.getTitle());
         assertTrue(homePage.hasErrorMessage("No valid userid/password"));
     }
 
@@ -60,7 +60,7 @@ public class LoginTest {
         homePage.setPassword("");
         homePage.submitLogIn();
 
-        assertEquals(homePage.getTitle(), "Home");
+        assertEquals("Home", homePage.getTitle());
         assertTrue(homePage.hasErrorMessage("No valid userid/password"));
     }
 
@@ -75,7 +75,7 @@ public class LoginTest {
         homePage.setPassword("1324");
         homePage.submitLogIn();
 
-        assertEquals(homePage.getTitle(), "Home");
+        assertEquals("Home", homePage.getTitle());
         assertTrue(homePage.hasErrorMessage("No valid userid/password"));
     }
 
@@ -86,7 +86,7 @@ public class LoginTest {
         homePage.setPassword("t");
         homePage.submitLogIn();
 
-        assertEquals(homePage.getTitle(), "Home");
+        assertEquals("Home", homePage.getTitle());
         assertTrue(homePage.hasErrorMessage("No valid userid/password"));
     }
 
@@ -101,7 +101,7 @@ public class LoginTest {
         homePage.setPassword("t");
         homePage.submitLogIn();
 
-        assertEquals(homePage.getTitle(), "Home");
+        assertEquals("Home", homePage.getTitle());
         assertTrue(homePage.hasWelcomeMessage("Welcome Jabba!"));
     }
 
